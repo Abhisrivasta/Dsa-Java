@@ -51,7 +51,31 @@ public class Basics2 {
         return  result;
     }
 
-    
+
+    static boolean isPrime(int num) {
+
+    if (num < 2) {
+        return false;
+    }
+
+    for (int i = 2; i <= Math.sqrt(num); i++) {
+        if (num % i == 0) {
+            return false;
+        }
+    }
+
+    return true;
+}
+
+    static void  findPrime(int start , int end){
+        for(int i = start ; i < end;i++){
+            if(isPrime(i)){
+                System.out.print(i + " ");
+            }
+        }
+        
+    }
+
     public static void main(String[] args) {
         /*
         // check even/odd
@@ -70,5 +94,8 @@ public class Basics2 {
         int power = findPower(2, 5);
         System.out.println(power);
          */
+
+        findPrime(2, 50);
+
     }
 }

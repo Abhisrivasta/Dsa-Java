@@ -21,10 +21,8 @@ public class Main {
 
         // Creating objects using constructor
         Student s1 = new Student("Abhi");  
-        // s1.name = "Abhi"
 
         Student s2 = new Student("Rahul");  
-        // s2.name = "Rahul"
 
 
         // Changing static variable using class name (correct way)
